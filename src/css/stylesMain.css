@@ -1,0 +1,73 @@
+.divMain {
+    flex: 1;
+    min-height: 500px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.divSelectedLogicGateDisplayName {
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.divSelectedLogicGateDescription {
+    flex: 1;
+    padding: 15px;
+}
+
+/*** Logic Gate Diagram section ***/
+
+.pinOn {
+    border: 5px solid yellow;
+}
+
+.pinOff {
+    border: 5px solid black;
+}
+
+/*** inputs ***/
+.logicGateDiagramInputs {
+    flex: 1;
+    flex-direction: column;
+}
+
+.inputPinDisplayName {
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 50px;
+}
+
+.inputPinLine {
+    width: 50%;
+    text-align: right;
+    font-weight: bolder;
+}
+
+/*** outputs ***/
+.logicGateDiagramOutputs {
+    flex: 1;
+    flex-direction: column;
+}
+
+.outputPinDisplayName {
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 50px;
+}
+
+.outputPinLine {
+    width: 50%;
+    text-align: left;
+    font-weight: bolder;
+}
+
+/*** diagram ***/
+.chipImage {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesGeneral.css">
+    <link rel="stylesheet" href="css/stylesMain.css">
+    <link rel="stylesheet" href="css/stylesLogicGates.css">
+    <link rel="stylesheet" href="css/stylesResults.css">
+    <title>Observable Logic Gates</title>
+    <script src="js/logicGateDefinitions.js"></script>
+    <script src="js/displayFunctions.js"></script>
+    <script src="js/selectFunctions.js"></script>
+</head>
+
+<script>
+    let selectedLogicGate = null;
+    let result = false;
+    let activeSubscriptions = [];
+</script>
+
+<body>
+    <h1>Observable Logic Gates</h1>
+    <table width="100%">
+        <tr>
+            <td width="25%">
+                <div id="divLogicGates" class="divLogicGates">
+
+                </div>
+            </td>
+            <td width="10px"></td>
+            <td>
+                <div id="divMain" class="divMain">
+                    <div id="divSelectedLogicGateDisplayName" class="divSelectedLogicGateDisplayName"></div>
+                    <div id="divSelectedLogicGateDiagram" class="divSelectedLogicGateDiagram"></div>
+                    <div id="divSelectedLogicGateDescription" class="divSelectedLogicGateDescription"></div>
+                </div>
+            </td>
+            <td width="10px"></td>
+            <td width="10%">
+                <div id="divResults" class="divResults">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+<script>
+    setupDisplay();
+</script>
+
+</html>
